@@ -3,23 +3,23 @@
 }
 
 .navbar-dark .navbar-brand {
-  color: #5f6368
+  color: #7ec23a;
 }
 
 .navbar-dark {
-  color: #5f6368
+  color: #7ec23a;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #5f6368
+  color: #7ec23a
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #5f6368
+  color: #7ec23a
 }
 
 .blue {
-  background-color: #3ab292 !important;
+  background-color: #7ec23a!important;
 }
 
 nav .brand-logo {

@@ -8,7 +8,7 @@
 }
 
 .white-text {
-  color: #3ab292 !important;
+  color: #7ec23a !important;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
@@ -20,11 +20,11 @@
 
 blue-grey.darken-1[_ngcontent-c5] {
   background-color: white !important;
-  border-color: #3ab292;
+  border-color: #7ec23a;
 }
 
 .header-color {
-  color: #3ab292 !important;
+  color: #7ec23a !important;
   margin-top: 30px;
   text-align: center;
 }
@@ -36,7 +36,7 @@ blue-grey.darken-1[_ngcontent-c5] {
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
-  border: 1px solid #3ab292;
+  border: 1px solid #7ec23a;
   border-radius: .25rem;
 }
 

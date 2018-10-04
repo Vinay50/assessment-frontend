@@ -1,0 +1,50 @@
+.my-card {
+  height: 350px;
+  width: 350px;
+}
+
+.blue-grey.darken-1 {
+  background-color: white !important;
+}
+
+.white-text {
+  color: #3ab292 !important;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: #007bff;
+  margin-right: 24px;
+  transition: color .3s ease;
+  text-transform: uppercase;
+}
+
+blue-grey.darken-1[_ngcontent-c5] {
+  background-color: white !important;
+  border-color: #3ab292;
+}
+
+.header-color {
+  color: #3ab292 !important;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  border: 1px solid #3ab292;
+  border-radius: .25rem;
+}
+
+.card .card-title {
+  font-size: 29px;
+  font-weight: 300;
+}
+
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+  box-shadow: 0 0px 0px 0px;
+}
