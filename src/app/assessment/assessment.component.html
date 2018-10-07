@@ -1,25 +1,32 @@
 <div class="col s10 offset-s1 card" *ngIf="!showQuestion">
   <h5 class="header-color text-center"> Assessment Details</h5>
   <div class="">
-    <h5><span class="card-title header-color">{{assessmentDetails?.assessment?.name}}</span></h5>
-    <p>{{assessmentDetails?.assessment?.description}}</p>
+    <h5><span class="card-title header-color">{{assessmentDetail?.assessment?.name}}</span></h5>
+    <p>{{assessmentDetail?.assessment?.description}}</p>
   </div>
   <div class="card-action ">
-    <button type="button" (click)="startAsessment(assessmentDetails.id)" class="btn waves-effect waves-light">Start
+    <button type="button" (click)="startAsessment(assessmentDetail.id)" class="btn waves-effect waves-light">Start
       Assessment</button>
   </div>
 </div>
 
 <div class="row" *ngIf="showQuestion">
-  <h5 class="header-color text-center">{{assessmentDetails?.assessment?.name}}</h5>
-  <div class="col s10 offset-s1" *ngFor="let ques of questionDetails; let i=index">
-    <h4>{{ques.title}}</h4>
-    <div class="col s4 offset-s1 radio_btns">
-      <div *ngFor="let answer of ques.answers; let i= index">
-        <label><input type="radio" name="answer" [value]="i"> {{answer.title}}</label><br>
+  <h5 class="header-color text-center">{{assessmentDetail?.assessment?.name}}</h5>
+  <!-- <div class="col s10 offset-s1" *ngFor="let question of filteredQuestions; let i=index"> -->
+  <div class="col s6 offset-s3">
+    <h4 class="question-style">{{questionDetails[userIndex]?.title}}</h4>
+    <div class="col s6  radio_btns">
+      <div class="answer-style" *ngFor="let answer of questionDetails[userIndex].answers; let i= index">
+        <label class="label-style"><input type="radio" style="position: none !important; color:white;" [value]="answer.id"
+            (change)="changeIndex(1, answer.id)" name="answer" [value]="i">
+          {{answer.title}}</label><br>
       </div>
     </div>
   </div>
-  <div class="col s6 offset-s1">
+  <div class="col s6 offset-s3">
+    <div class="text-center" *ngIf="userIndex >= 1">
+      <span class="arrow-back"></span>
+      <a class="prev-link" (click)="changeIndex(-1)">Back to previous question</a>
+    </div>
   </div>
 </div>
