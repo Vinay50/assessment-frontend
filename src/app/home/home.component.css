@@ -8,11 +8,11 @@
 }
 
 .white-text {
-  color: #7ec23a !important;
+  color: #000 !important;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-  color: #007bff;
+  color: #5000cfab;
   margin-right: 24px;
   transition: color .3s ease;
   text-transform: uppercase;
@@ -20,11 +20,11 @@
 
 blue-grey.darken-1[_ngcontent-c5] {
   background-color: white !important;
-  border-color: #7ec23a;
+  border-color: #ededed;
 }
 
 .header-color {
-  color: #7ec23a !important;
+  color: black !important;
   margin-top: 30px;
   text-align: center;
 }
@@ -36,13 +36,13 @@ blue-grey.darken-1[_ngcontent-c5] {
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
-  border: 1px solid #7ec23a;
+  border: 1px solid #ededed;
   border-radius: .25rem;
 }
 
 .card .card-title {
-  font-size: 29px;
-  font-weight: 300;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {

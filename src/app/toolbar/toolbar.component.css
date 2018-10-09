@@ -3,29 +3,38 @@
 }
 
 .navbar-dark .navbar-brand {
-  color: #7ec23a;
+  color: #2e6da4;
 }
 
 .navbar-dark {
-  color: #7ec23a;
+  color: #2e6da4;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #7ec23a
+  color: #2e6da4
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #7ec23a
+  color: #2e6da4
 }
 
 .blue {
-  background-color: #7ec23a!important;
+  background-color: #2e6da4!important;
 }
 
 nav .brand-logo {
   position: absolute;
   color: #fff;
   display: inline-block;
-  font-size: 2.1rem;
+  font-size: 1.7rem;
   padding-left: 30px;
+}
+
+nav ul a {
+  transition: background-color .3s;
+  font-size: 1rem;
+  color: #fff;
+  display: block;
+  padding: 0 15px;
+  cursor: pointer;
 }

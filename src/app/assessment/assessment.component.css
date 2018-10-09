@@ -8,7 +8,7 @@
 }
 
 .white-text {
-  color: #7ec23a !important;
+  color: #ededed !important;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
@@ -20,11 +20,11 @@
 
 blue-grey.darken-1[_ngcontent-c5] {
   background-color: white !important;
-  border-color: #7ec23a;
+  border-color: #ededed;
 }
 
 .header-color {
-  color: #7ec23a !important;
+  color: #000 !important;
   margin-top: 30px;
   text-align: center;
 }
@@ -36,13 +36,13 @@ blue-grey.darken-1[_ngcontent-c5] {
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
-  border: 1px solid #7ec23a;
+  border: 1px solid #ededed;
   border-radius: .25rem;
 }
 
 .card .card-title {
-  font-size: 29px;
-  font-weight: 300;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
@@ -63,6 +63,7 @@ blue-grey.darken-1[_ngcontent-c5] {
 
 .radio_btns {
   padding: 0 0rem;
+  margin-top: 25px;
 }
 
 .prev-link {
@@ -78,17 +79,34 @@ blue-grey.darken-1[_ngcontent-c5] {
 }
 
 .answer-style {
-  background-color: #1da1f2;
-  padding: 20px;
-  margin-bottom: 7px;
+  background-color: #d9edf7;
+  padding: 15px;
+  margin-bottom: 15px;
   border-radius: 28px;
+}
+
+.label-style.input:checked {
+  animation: fadeout 1s;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .label-style {
   font-size: 19px !important;
-  color: white !important;
+  color: #000 !important;
 }
 
 .question-style {
-  color: #1da1f2;
+  color: #000;
+}
+
+.assessment-detail {
+  margin-top: 75px;
 }
