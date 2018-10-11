@@ -16,6 +16,7 @@
   <div class="col s6 offset-s3">
     <h4 class="question-style">{{questionDetails[userIndex]?.title}}</h4>
     <div class="col s6  radio_btns">
+      <!-- value of {{questionDetails}} -->
       <div class="answer-style" *ngFor="let answer of questionDetails[userIndex].answers; let i= index">
         <label class="label-style"><input type="radio" style="position: none !important; color:white;" [value]="answer.id"
             (change)="changeIndex(1, answer.id)" name="answer" [value]="i">

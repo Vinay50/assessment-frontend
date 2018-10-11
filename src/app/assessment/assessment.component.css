@@ -110,3 +110,13 @@ blue-grey.darken-1[_ngcontent-c5] {
 .assessment-detail {
   margin-top: 75px;
 }
+
+.btn, .btn-large {
+  text-decoration: none;
+  color: #fff;
+  background-color: #2e6da4;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+}

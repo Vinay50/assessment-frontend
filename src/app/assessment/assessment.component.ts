@@ -34,16 +34,21 @@ export class AssessmentComponent implements OnInit {
     this.showQuestion = true;
     this.assessmentService.getQuestions(this.assessmentId).subscribe(res => {
       this.questionDetails = res;
+      console.log('question:' + this.questionDetails);
     });
   }
 
   changeIndex(number, answerid) {
+    console.log('length is: ' + this.questionDetails.length);
+    console.log('userindex is: ' + this.userIndex);
     this.selectedOption = this.questionDetails[this.userIndex].answers.filter(
       item => item.id === answerid
     )[0];
     if (
       (this.userIndex > 0 && number < 0) ||
-      (this.userIndex < this.questionDetails.length && number > 0)
+      (this.userIndex < this.questionDetails.length &&
+        number > 0 &&
+        this.questionDetails.length - this.userIndex > 1)
     ) {
       this.userIndex += number;
     }
